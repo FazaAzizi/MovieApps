@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (5.10.2)
+  - Kingfisher (8.3.1)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - netfox (1.21.0)
+  - RxBlocking (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxCoreData (1.0.1):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxTest (6.5.0):
+    - RxSwift (= 6.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - Moya/RxSwift (~> 15.0)
+  - netfox
+  - RxBlocking
+  - RxCocoa (~> 6.5.0)
+  - RxCoreData
+  - RxSwift (~> 6.5.0)
+  - RxTest
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Moya
+    - netfox
+    - RxBlocking
+    - RxCocoa
+    - RxCoreData
+    - RxRelay
+    - RxSwift
+    - RxTest
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Kingfisher: 3204d23de16b5ea53541c44ca5a8efb55741dec3
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxCoreData: 4c1686b30499c05b90104eec1a879f41aa1a0a65
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
+
+PODFILE CHECKSUM: 8566718c19983b05e46f477ed33e8a12c2026887
+
+COCOAPODS: 1.16.2

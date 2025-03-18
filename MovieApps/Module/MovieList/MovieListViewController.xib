@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieListViewController" customModule="MovieApps" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="X6m-bu-5CL" id="kgi-6P-iI5"/>
+                <outlet property="emptyLabel" destination="lPp-3j-Uhr" id="WrG-C7-mmQ"/>
+                <outlet property="searchBarView" destination="qE1-AO-NLm" id="T4D-tY-dtz"/>
+                <outlet property="tableView" destination="E75-GG-TLd" id="ggh-Qm-Fn6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E75-GG-TLd">
+                    <rect key="frame" x="0.0" y="139" width="393" height="679"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPp-3j-Uhr">
+                    <rect key="frame" x="20" y="219" width="353" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qE1-AO-NLm" customClass="SearchBarView" customModule="MovieApps" customModuleProvider="target">
+                    <rect key="frame" x="16" y="79" width="361" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="87g-fS-yIg"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-bu-5CL">
+                    <rect key="frame" x="176.66666666666666" y="778" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="vjc-fT-xKX"/>
+                        <constraint firstAttribute="height" constant="40" id="xnd-lU-P0j"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="E75-GG-TLd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Do-fK-gJl"/>
+                <constraint firstItem="qE1-AO-NLm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="K6Z-AY-b9j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qE1-AO-NLm" secondAttribute="trailing" constant="16" id="UvF-EN-iIN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lPp-3j-Uhr" secondAttribute="trailing" constant="20" id="bnj-5b-MdS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="E75-GG-TLd" secondAttribute="bottom" id="dwM-dG-CiW"/>
+                <constraint firstItem="E75-GG-TLd" firstAttribute="top" secondItem="qE1-AO-NLm" secondAttribute="bottom" constant="20" id="gXd-Eo-Ff3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E75-GG-TLd" secondAttribute="trailing" id="qfQ-lA-Tv4"/>
+                <constraint firstItem="X6m-bu-5CL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="sjK-YK-czJ"/>
+                <constraint firstItem="X6m-bu-5CL" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="tz2-jK-8jR"/>
+                <constraint firstItem="qE1-AO-NLm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wGD-uk-Hex"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X6m-bu-5CL" secondAttribute="bottom" id="zAR-YN-lni"/>
+                <constraint firstItem="lPp-3j-Uhr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zjZ-Bb-zt1"/>
+                <constraint firstItem="lPp-3j-Uhr" firstAttribute="top" secondItem="qE1-AO-NLm" secondAttribute="bottom" constant="100" id="zsg-gF-7fq"/>
+            </constraints>
+            <point key="canvasLocation" x="-10" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
