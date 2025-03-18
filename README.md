@@ -1,1 +1,58 @@
-# MovieApps
+MovieApps
+A modern iOS application that allows users to browse trending movies, search for specific titles, and view detailed information about each movie.
+
+Features
+1. Browse trending movies from The Movie Database (TMDB)
+
+2. Search functionality to find specific movies
+
+3. Detailed movie information including title, overview, poster, director, and cast
+
+4. Offline support with Core Data persistence
+
+5. Network connectivity handling
+
+6. Pull-to-refresh for latest content
+
+Tech Stack
+Architecture
+MVVM (Model-View-ViewModel) architecture
+
+Reactive programming with RxSwift
+
+Frameworks & Libraries
+UIKit: For building the user interface
+
+RxSwift/RxCocoa: For reactive programming
+
+Moya: For network abstraction
+
+Kingfisher: For image loading and caching
+
+Core Data: For local data persistence
+
+XCTest: For unit testing
+
+RxTest/RxBlocking: For testing reactive code
+
+API
+The Movie Database (TMDB) API for movie data
+
+Trending movies endpoint
+
+Movie details endpoint with credits
+
+Requirements
+iOS 14.0+
+Xcode 13.0+
+Swift 5.0+
+
+Installation
+Clone the repository
+
+Install dependencies (CocoaPods)
+
+Open the workspace and run the project
+
+Testing
+The project includes unit tests for the ViewModel layer using RxTest and RxBlocking to test the reactive behavior.
