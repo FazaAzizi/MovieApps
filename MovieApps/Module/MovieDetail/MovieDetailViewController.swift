@@ -96,9 +96,10 @@ class MovieDetailViewController: UIViewController {
     }
     
     @IBAction func openIMDbTapped(_ sender: Any) {
-        if let imdbId = viewModel.movieDetail.value.imdbId,
-           let url = URL(string: "https://www.imdb.com/title/\(imdbId)") {
-            UIApplication.shared.open(url)
+        if let imdbId = viewModel.movieDetail.value.imdbId {
+            let detailVC = MovieDetailWebViewViewController.create()
+            detailVC.urlString = "https://www.imdb.com/title/\(imdbId)"
+            navigationController?.pushViewController(detailVC, animated: true)
         }
     }
     
